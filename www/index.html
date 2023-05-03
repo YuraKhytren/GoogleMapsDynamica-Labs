@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Google Map</title>
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body> 
+        <div id="floating-panel">
+            <div>Hide Filters</div>
+                <div><label for="filter">Building Type:</label>
+                    <div>
+                    <select name="Filter" id="filter">
+                        <option value="0">Show All</option>
+                        <option value="1">HealthCare</option>
+                        <option value="2">Ofice</option>
+                        <option value="3">Multy-famaly</option>
+                        <option value="4">Industrial</option>
+                        <option value="5">Factory</option>
+                    </select>
+                </div>
+             </div>
+         </div>
+        <div id="map"></div>
+    </body>
+    <script src="script.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap" defer>
+</script>
+
+</html>
